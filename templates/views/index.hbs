@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+
+    </head>
+    <body>
+  
+        <h1>{{title}}</h1>
+              {{>header}}
+<form method="POST">
+    <input placeholder="Enter City" id="txt" class="form-control">
+    <button class="btn btn-primary">Submit</button>
+
+    <h3 class="list-group-item" id="message"></h3>
+</form>
+              
+        {{>footer}}
+        <script src="./js/app.js"></script>
+    </body>
+</html>
