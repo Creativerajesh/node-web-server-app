@@ -51,4 +51,4 @@ app.get('*',(req,res)=>{0
     res.render('404',{error:"Page Not Found"})
 })
 
-app.listen(portt,()=>console.log('server started on' + port));
+app.listen(port,()=>console.log('server started on' + port));
