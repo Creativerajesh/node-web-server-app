@@ -9,6 +9,7 @@ const viewpath=path.join(__dirname,'../templates/views')
 const partialpath=path.join(__dirname,'../templates/partials')
 
 const app = express()
+const port=process.env.PORT | 3000
 app.set('views',viewpath)
 app.set('view engine','hbs')
 hbs.registerPartials(partialpath)
@@ -50,4 +51,4 @@ app.get('*',(req,res)=>{0
     res.render('404',{error:"Page Not Found"})
 })
 
-app.listen(3000,()=>console.log('server started'));
+app.listen(portt,()=>console.log('server started on' + port));
